@@ -5,51 +5,39 @@
   
   <title>Taak 05 IT-profile | Geïntegreerde Proef Christoph Van Geertsom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="IT-Profile
-Hieronder vind je een overzicht van mijn algemene kennis en vaardigheden van IT. Alles is op een schaal van 1 tot 10.
-Algemene kennis
-Hardware
-
-
-Software
-
-
-Netwerken
-
-
-Besturingssystemen">
+  <meta name="description" content=".meter { 
+			height: 20px;
+			width: 500px;
+			position: relative;
+			margin: 5px 0 20px 0;
+			background: #555;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius:25px;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Taak 05 IT-profile">
 <meta property="og:url" content="http://christoph.vgeertsom.github.io/Taak05/index.html">
 <meta property="og:site_name" content="Geïntegreerde Proef Christoph Van Geertsom">
-<meta property="og:description" content="IT-Profile
-Hieronder vind je een overzicht van mijn algemene kennis en vaardigheden van IT. Alles is op een schaal van 1 tot 10.
-Algemene kennis
-Hardware
-
-
-Software
-
-
-Netwerken
-
-
-Besturingssystemen">
+<meta property="og:description" content=".meter { 
+			height: 20px;
+			width: 500px;
+			position: relative;
+			margin: 5px 0 20px 0;
+			background: #555;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius:25px;">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Taak 05 IT-profile">
-<meta name="twitter:description" content="IT-Profile
-Hieronder vind je een overzicht van mijn algemene kennis en vaardigheden van IT. Alles is op een schaal van 1 tot 10.
-Algemene kennis
-Hardware
-
-
-Software
-
-
-Netwerken
-
-
-Besturingssystemen">
+<meta name="twitter:description" content=".meter { 
+			height: 20px;
+			width: 500px;
+			position: relative;
+			margin: 5px 0 20px 0;
+			background: #555;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius:25px;">
 
   
   
@@ -82,8 +70,6 @@ Besturingssystemen">
         <a id="main-nav-toggle" class="nav-icon"></a>
         
           <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
         
           <a class="main-nav-link" href="/TeacherAidLS">IT-tapa lagere school</a>
         
@@ -125,28 +111,176 @@ Besturingssystemen">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="IT-Profile">IT-Profile</h1>
-<p>Hieronder vind je een overzicht van mijn algemene kennis en vaardigheden van IT. Alles is op een schaal van 1 tot 10.</p>
-<h2 id="Algemene_kennis">Algemene kennis</h2>
-<p><h2>Hardware</h2></p>
-<div class="meter red"><br><span style="width: 70%"></span><br></div>
+        <doctypehtml>
+<style>
+		.meter { 
+			height: 20px;
+			width: 500px;
+			position: relative;
+			margin: 5px 0 20px 0;
+			background: #555;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius:25px;
+			padding: 10px;
+		}
+		.meter > span {
+			display: block;
+			height: 100%;
+			background-color: rgb(80,0,0);
+			background-image: -webkit-gradient(
+			  linear,
+			  left bottom,
+			  left top,
+			  color-stop(0, rgb(80,0,0)),
+			  color-stop(1, rgb(255,255,255))
+			 );
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.meter > span:after, .animate > span > span {
+			content: "";
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			background-image: 
+			   -webkit-gradient(linear, 0 0, 100% 100%, 
+			      color-stop(.25, rgba(80, 0, 0, .2)), 
+			      color-stop(.25, transparent), color-stop(.5, transparent), 
+			      color-stop(.5, rgba(80, 0, 0, .2)), 
+			      color-stop(.75, rgba(80, 0, 0, .2)), 
+			      color-stop(.75, transparent), to(transparent)
+			   );
 
-<p><h2>Software</h2></p>
-<div class="meter red"><br><span style="width: 65%"></span><br></div>
+			z-index: 1;
+			-webkit-background-size: 60px 60px;
+			-moz-background-size: 60px 60px;
+			-webkit-animation: move 3s linear infinite;
 
-<p><h2>Netwerken</h2></p>
-<div class="meter red"><br><span style="width: 50%"></span><br></div>
+			overflow: hidden;
+		}
+				
+		@-webkit-keyframes move {
+		    0% {
+		       background-position: 0 0;
+		    }
+		    100% {
+		       background-position: 50px 50px;
+		    }
+		}
+		
+		.red > span {
+			background-color: #500000
+			background-image: -moz-linear-gradient(top, #500000, #ffffff);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #500000),color-stop(1, #ffffff));
+			background-image: -webkit-linear-gradient(#500000, #ffffff);
+		}
+		h1 {
+            color: #500000;
+            font-size: 72px;
+        }
+    
+        h2 {
+            color: #500000;
+            font-size: 40px;
+        }
+    
+        h3 {
+            color: #500000;
 
-<p><h2>Besturingssystemen</h2></p>
-<ul><br>    <li>Windows<br>    <div class="meter red"><br>        <span style="width: 70%"></span><br>    </div><br>    </li><br>    <li>Linux<br>    <div class="meter red"><br>        <span style="width: 40%"></span><br>    </div><br>    </li><br>    <li>Mac OS<br>    <div class="meter red"><br>        <span style="width: 10%"></span><br>    </div><br>    </li><br></ul>   
+        }
+        h4 {
+            color: #500000;
+            font-style: italic;
+        }
+        
+        ul{
+        list-style-type:disc;
+        }
+    
+        p{
+        text-align: center;
+        }
+    
+        #geheel{
 
-<h2 id="Vaardigheden">Vaardigheden</h2>
-<p><h3>Programmeren</h3></p>
-<ul><br><li>VBA<br>    <div class="meter red"><br>        <span style="width: 90%"></span><br>    </div><br>    </li><br><li>C#<br>    <div class="meter red"><br>        <span style="width: 60%"></span><br>    </div></li><br><li>Javascript<br>    <div class="meter red"><br>        <span style="width: 25%"></span><br>    </div></li><br><li>HTML<br>    <div class="meter red"><br>        <span style="width: 40%"></span><br>    </div></li><br><li>CSS<br>    <div class="meter red"><br>        <span style="width: 60%"></span><br>    </div></li><br></ul>
+        }
+        b{
+            color: #500000;
+            text-decoration: underline;
+        }
+    
+
+	</style>
+
+Hieronder vind je een overzicht van mijn algemene kennis en vaardigheden van IT. Alles is op een schaal van 1 tot 10.
+
+<b>Algemene kennis</b>
+
+<h2>Hardware</h2>
+<div class="meter red">
+<span style="width: 70%"></span>
+</div>
+
+<h2>Software</h2>
+<div class="meter red">
+<span style="width: 65%"></span>
+</div>
+
+<h2>Netwerken</h2>
+<div class="meter red">
+<span style="width: 50%"></span>
+</div>
+
+<h2>Besturingssystemen</h2>
+<ul>
+    <li>Windows
+    <div class="meter red">
+		<span style="width: 70%"></span>
+	</div>
+    </li>
+    <li>Linux
+	<div class="meter red">
+		<span style="width: 40%"></span>
+	</div>
+    </li>
+    <li>Mac OS
+	<div class="meter red">
+		<span style="width: 10%"></span>
+	</div>
+    </li>
+</ul>   
+    
+<b>Vaardigheden</b>
+<h2>Programmeren</h2>
+<ul>
+<li>VBA
+	<div class="meter red">
+		<span style="width: 90%"></span>
+	</div>
+    </li>
+<li>C#
+	<div class="meter red">
+		<span style="width: 60%"></span>
+	</div></li>
+<li>Javascript
+	<div class="meter red">
+		<span style="width: 25%"></span>
+	</div></li>
+<li>HTML
+    <div class="meter red">
+		<span style="width: 40%"></span>
+	</div></li>
+<li>CSS
+    <div class="meter red">
+		<span style="width: 60%"></span>
+	</div></li>
+</ul>
+</doctypehtml>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://christoph.vgeertsom.github.io/Taak05/index.html" data-id="emtlonrh5ba9lmtj" class="article-share-link">Share</a>
+      <a data-url="http://christoph.vgeertsom.github.io/Taak05/index.html" data-id="1cruce47zf5wiznd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -172,8 +306,6 @@ Besturingssystemen">
     <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
     <a href="/TeacherAidLS" class="mobile-nav-link">IT-tapa lagere school</a>
   
