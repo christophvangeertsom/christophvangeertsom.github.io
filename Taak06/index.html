@@ -70,9 +70,7 @@ Zo de eerste grote stap heb ik nu gezet door deze site te maken. Deze website ma
       <div class="outer">
         <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/Taak06/index.html" class="article-date">
-  <time datetime="2014-11-14T20:40:31.000Z" itemprop="datePublished">Nov 14 2014</time>
-</a>
+    
     
   </div>
   <div class="article-inner">
@@ -115,7 +113,20 @@ Zo de eerste grote stap heb ik nu gezet door deze site te maken. Deze website ma
 <pre><code> <span class="variable">$ </span>hexo server
 </code></pre><p>Dit commando start je website op in de browser. Dit is wel op het adress: <a href="http://localhost:400" target="_blank" rel="external">http://localhost:400</a>. Hij start hierop omdat hij alleen nog maar lokaal werkt en dus nog niet online staat.<br>Nu kan je beginnen met het bewerken van je website of blog. Dit hangt ervan af hoe je deze site wil gebruiken.</p>
 </li>
+<li><p>Het deployen van de website om bijvoorbeeld door githubpages te laten publiceren doe je als volgt.<br>Om te beginnen moet je in het algemeen _config.yml bestand een paar dingen veranderen nl.:</p>
+<pre><code> # Deployment
+ deploy:
+ <span class="class"><span class="keyword">type</span>: <span class="title">github</span></span>
+ repo: https:<span class="comment">//github.com/christophvangeertsom/christophvangeertsom.github.io.git</span>
+ branch: master
+ message: 
+</code></pre></li>
 </ol>
+<p>Bij repo kan je zien wat de link is naar mijn repository op github. De naam van de repository moet hetzelfde zijn als die van je gebruikersnaam anders werkt dit niet.<br>Nadat je al de instellingen juist hebt gezet moet je volgende commando’s ingeven:</p>
+<pre><code>    <span class="variable">$ </span>hexo clean
+    <span class="variable">$ </span>hexo generate
+    <span class="variable">$ </span>hexo deploy
+</code></pre><p>na dit laatste commando zal je moeten aanmelden bij github als alles goed is verlopen. Als je dan even wacht kan je surfen naar het adres waar je website online staat om te kijken of het gelukt is (dit kan meestal een tijdje duren).</p>
 <h2 id="Het_bewerken_van_de_blog_of_website">Het bewerken van de blog of website</h2>
 <p>Wanneer ik de map opende van mijn website vond ik een _config.yml bestand. Dit bestand heb ik geopend en daar heb ik een paar aanpassingen gedaan.<br>Dit is mijn resultaat geworden:</p>
 <pre><code><span class="preprocessor"># Site</span>
@@ -131,16 +142,9 @@ Zo de eerste grote stap heb ik nu gezet door deze site te maken. Deze website ma
 <pre><code><span class="preprocessor"># Header</span>
 <span class="label">menu:</span>
 <span class="label">Home:</span> /
-<span class="label">Archives:</span> /archives
-Teacher Aid: /TeacherAid
-Systeem- en netwerkbeheer: /Sys-Netwerkbeheer
-Softwareontwikkeling &amp; - pakketten: /SO-SP
-Bedrijfsbeheer &amp; -economie: /Bedrijfsbeheer-economie
-<span class="label">Frans:</span> /Frans
-<span class="label">Engels:</span> /Engels
-<span class="label">Nederlands:</span> /Nederlands
-Zakelijke communicatie Nederlands: /NCOR 
-<span class="label">Stage:</span> /Stage
+IT-tapa lagere school: /TeacherAidLS
+IT-tapa Office <span class="number">365</span> &amp; Google Forms: /TeacherAidMiddagsessie
+Over mij: /OverMij
 <span class="label">rss:</span> false
 </code></pre><p>Als ik hexo voor de eerste keer opende kreeg ik aan de zijkant van mijn scherm een overzichtje van alle posts die ik deed. Om dit te verwijderen moet je in hetzelfde _config.yml bestand als hierboven iets veranderen nl.:</p>
 <pre><code><span class="preprocessor"># Sidebar</span>
@@ -170,7 +174,7 @@ title: Workflow
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://christoph.vgeertsom.github.io/Taak06/index.html" data-id="a0aqrenvf9lg410v" class="article-share-link">Share</a>
+      <a data-url="http://christoph.vgeertsom.github.io/Taak06/index.html" data-id="v5cjpap2nwc7wbxw" class="article-share-link">Share</a>
       
       
     </footer>
