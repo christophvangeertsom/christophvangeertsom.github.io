@@ -322,7 +322,7 @@ body {
   text-align: center;
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 62%;
   left: 0;
   margin-top: -20px;
 }
@@ -404,9 +404,6 @@ body {
 }
 #nav-rss-link:before {
   content: "\f09e";
-}
-#nav-search-btn:before {
-  content: "\f002";
 }
 #search-form-wrap {
   position: absolute;
