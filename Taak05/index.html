@@ -227,25 +227,44 @@
         position:relative;
         float:left;
         width:50%;
+
         }
-    
+        
         #rechtsediv {
         position:relative;
         float:right;
         width:50%;
         }
     
+        a.mainlevel:link, a.mainlevel:visited {
+        border:2px solid #000000;
+        display: inline-block;
+        text-align: center ; 
+        text-decoration: none;
+        color: #500000;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 4px;
+        color: #500000;
+        width: 50px;
+        }
+    
+        a.mainlevel:hover {
+        background-color:#500000 ;
+        color: #cccccc; 
+        }
 
 	</style>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <h3>Opdracht</h3>
 Voor deze opdracht was het de bedoeling om een geanimeerd object te maken van al de kennis die je had van wat met IT te maken heeft.
 Als tweede versie moesten we een vergelijking maken tussen de kennis in het begin van het schooljaar en het einde van het schooljaar. Wanneer u op de twee verschillende titeljes klikt kan u mijn vergelijking zien. Weer is alles op een schaal van 1 tot 10.
 
 <h3>IT-profile</h3>
 <div id="linksediv">
-    <div id="begindiv"><p>Klik op mij om het IT-profile van het begin van het jaar te tonen.</p></div>
-<div id="beginjaar" style="display: none;">
+    <div id="begindiv"><p>IT-profile van in het begin van het schooljaar</p><div id="toonknop1"><a href="#" class="mainlevel">Toon</a></div></div> 
+
+    <div id="beginjaar" style="display: none;">
 <h4>Algemene kennis</h4>
 
 <h5>Hardware</h5>
@@ -322,7 +341,7 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 </div>
     
 <div id="rechtsediv">    
-<div id="einddiv"><p>Klik op mij om het IT-profile van het einde van het jaar te tonen.</p></div>
+<div id="einddiv"><p>IT-profile van het einde van het schooljaar</p><div id="toonknop2"><a href="#" class="mainlevel">Toon</a></div></div>
 <div id="eindjaar" style="display: none;">
 <h4>Algemene kennis</h4>
 
@@ -340,8 +359,8 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 
 <h5>Netwerken</h5>
 <div class="meter red">
-<span style="width: 60%"></span>
-<h6>60%</h6>
+<span style="width: 70%"></span>
+<h6>70%</h6>
 </div>
 
 <h5>Besturingssystemen</h5>
@@ -399,38 +418,36 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 </div>
     </div>    
     <script>
-        $(document).ready(function() 
-		{
-			$('#begindiv').click (function() 
-			{
-				$('#beginjaar').fadeIn();
-			}),
-			$('#begindiv').dblclick (function() 
-			{
-				$('#beginjaar').fadeOut();
+        $(document).ready(function() {
+			$('#toonknop1').on('click', function() {
+				$('#beginjaar').fadeToggle();
+				if($('#toonknop1 a').text() == 'Toon')
+				{
+					$('#toonknop1 a').text('Verberg');
+				}
+				else
+				{
+					$('#toonknop1 a').text('Toon');
+				}
 			});
-		});
-		
-		$(document).ready(function() 
-		{
-			$('#einddiv').click (function() 
-			{
-				$('#eindjaar').fadeIn();
-			}), 
-			$('#einddiv').dblclick (function() 
-			{
-				$('#eindjaar').fadeOut();
+			
+			$('#toonknop2').on('click', function() {
+				$('#eindjaar').fadeToggle();
+				if($('#toonknop2 a').text() == 'Toon')
+				{
+					$('#toonknop2 a').text('Verberg');
+				}
+				else
+				{
+					$('#toonknop2 a').text('Toon');
+				}
 			});
 		});
     </script>
 </doctypehtml>
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://christoph.vgeertsom.github.io/Taak05/index.html" data-id="8pwer31wc9fn1xww" class="article-share-link">Share</a>
-      
-      
-    </footer>
+    
   </div>
   
     
