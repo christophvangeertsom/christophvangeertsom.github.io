@@ -128,9 +128,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
-  max-width: 1020px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 100%;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 0;
 }
 .outer:before,
 .outer:after {
@@ -301,7 +302,8 @@ body {
 #header-outer {
   height: 100%;
   width: 100%;
-  position: relative;
+  margin-left: 0;
+  padding: 0;
 }
 #header-inner {
   position: relative;
@@ -349,12 +351,11 @@ body {
 }
 #main-nav {
   float: left;
-  margin-left: -250px;
   background-color: #500000;
   position: fixed;
-  margin-right: 4500px;
   margin-top: 301px;
   width: 150px;
+  margin-left: 25px;
 }
 .nav-icon,
 .main-nav-link {
