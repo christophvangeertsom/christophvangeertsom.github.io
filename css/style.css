@@ -130,7 +130,7 @@ body {
 .outer {
   max-width: 100%;
   margin-left: 250px;
-  margin-right: 250px;
+  margin-right: 150px;
   padding: 0;
 }
 .outer:before,

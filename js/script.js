@@ -135,3 +135,11 @@
     $container.removeClass('mobile-nav-on');
   });
 })(jQuery);
+
+$(window).on("scroll", function(){
+	if($(this).scrollTop()>300){
+		$("#main-nav").addClass("Fix");
+	} else {
+		$("#main-nav").removeClass("Fix");
+	}
+});
