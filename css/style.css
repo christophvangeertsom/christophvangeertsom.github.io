@@ -306,7 +306,6 @@ body {
   padding: 0;
 }
 #header-inner {
-  position: relative;
   overflow: hidden;
 }
 #banner {
@@ -352,10 +351,15 @@ body {
 #main-nav {
   float: left;
   background-color: #500000;
-  position: fixed;
   margin-top: 301px;
   width: 150px;
-  margin-left: 25px;
+  position: absolute;
+  left: 0;
+  z-index: 50000;
+}
+.Fix {
+  margin-top: 0 !important;
+  position: fixed !important;
 }
 .nav-icon,
 .main-nav-link {
