@@ -179,6 +179,14 @@
 			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #500000),color-stop(1, #ffffff));
 			background-image: -webkit-linear-gradient(#500000, #ffffff);
 		}
+		
+		.blue > span {
+			background-color: #0099FF
+			background-image: -moz-linear-gradient(top, #0099FF, #ffffff);
+			background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #0099FF),color-stop(1, #ffffff));
+			background-image: -webkit-linear-gradient(#0099FF, #ffffff);
+		}
+		
         h3 {
             color: black;
             font-style: italic;
@@ -219,16 +227,11 @@
     
         #linksediv {
         position:relative;
-
+		float: center;
         width:100%;
 
         }
-        
-        #rechtsediv {
-        position:relative;
 
-        width:100%;
-        }
     
         a.mainlevel:link, a.mainlevel:visited {
         border:2px solid #000000;
@@ -252,11 +255,11 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <h3>Opdracht</h3>
 Voor deze opdracht was het de bedoeling om een geanimeerd object te maken van al de kennis die je had van wat met IT te maken heeft.
-Als tweede versie moesten we een vergelijking maken tussen de kennis in het begin van het schooljaar en het einde van het schooljaar. Wanneer u op de twee knoppen klikt kan u zien wat er veranderd is aan mijn vaardigheden en kennis. Weer is alles op een schaal van 1 tot 10.
+Als tweede versie moesten we een vergelijking maken tussen de kennis in het begin van het schooljaar en het einde van het schooljaar. Wanneer u op de knop klikt ziet u mijn IT-Profile. Het rode is van in het begin van het jaar, het blauwe van op het einde. Alles is op een schaal van 1 tot 10.
 
 <h3>IT-profile</h3>
-<div id="linksediv">
-    <div id="begindiv"><p>IT-profile van in het begin van het schooljaar</p><div id="toonknop1"><a href="#" class="mainlevel">Toon</a></div></div> 
+
+    <div id="toonknop1"><a href="#" class="mainlevel">Toon</a></div> 
 
     <div id="beginjaar" style="display: none;">
 <h4>Algemene kennis</h4>
@@ -267,10 +270,20 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 <h6>70%</h6>
 </div>
 
+<div class="meter blue">
+<span style="width: 80%"></span>
+<h6>80%</h6>
+</div>
+
 <h5>Software</h5>
 <div class="meter red">
 <span style="width: 60%"></span>
 <h6>60%</h6>
+</div>
+
+<div class="meter blue">
+<span style="width: 70%"></span>
+<h6>70%</h6>
 </div>
 
 <h5>Netwerken</h5>
@@ -279,6 +292,11 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 <h6>50%</h6>
 </div>
 
+<div class="meter blue">
+<span style="width: 70%"></span>
+<h6>70%</h6>
+</div>
+
 <h5>Besturingssystemen</h5>
 <ul>
     <li>Windows
@@ -286,93 +304,29 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 		<span style="width: 70%"></span>
         <h6>70%</h6>
 	</div>
-    </li>
-    <li>Linux
-	<div class="meter red">
-		<span style="width: 40%"></span>
-        <h6>40%</h6>
-	</div>
-    </li>
-    <li>Mac OS
-	<div class="meter red">
-		<span style="width: 10%"></span>
-        <h6>10%</h6>
-	</div>
-    </li>
-</ul>   
-    
-<h4>Vaardigheden</h4>
-<h5>Programmeren</h5>
-<ul>
-<li>VBA
-	<div class="meter red">
-		<span style="width: 90%"></span>
-        <h6>90%</h6>
-	</div>
-    </li>
-<li>C#
-	<div class="meter red">
-		<span style="width: 60%"></span>
-        <h6>60%</h6>
-	</div></li>
-<li>Javascript
-	<div class="meter red">
-		<span style="width: 30%"></span>
-        <h6>30%</h6>
-	</div></li>
-<li>HTML
-    <div class="meter red">
-		<span style="width: 40%"></span>
-        <h6>40%</h6>
-	</div></li>
-<li>CSS
-    <div class="meter red">
-		<span style="width: 60%"></span>
-        <h6>60%</h6>
-	</div></li>
-</ul>
-</div>
-</div>
-    
-<div id="rechtsediv">    
-<div id="einddiv"><p>IT-profile op het einde van het schooljaar</p><div id="toonknop2"><a href="#" class="mainlevel">Toon</a></div></div>
-<div id="eindjaar" style="display: none;">
-<h4>Algemene kennis</h4>
-
-<h5>Hardware</h5>
-<div class="meter red">
-<span style="width: 80%"></span>
-<h6>80%</h6>
-</div>
-
-<h5>Software</h5>
-<div class="meter red">
-<span style="width: 70%"></span>
-<h6>70%</h6>
-</div>
-
-<h5>Netwerken</h5>
-<div class="meter red">
-<span style="width: 70%"></span>
-<h6>70%</h6>
-</div>
-
-<h5>Besturingssystemen</h5>
-<ul>
-    <li>Windows
-    <div class="meter red">
+	<div class="meter blue">
 		<span style="width: 80%"></span>
         <h6>80%</h6>
 	</div>
     </li>
-    <li>Linux
+    
+	<li>Linux
 	<div class="meter red">
 		<span style="width: 40%"></span>
         <h6>40%</h6>
 	</div>
+	<div class="meter blue">
+		<span style="width: 40%"></span>
+        <h6>70%</h6>
+	</div>
     </li>
+	
     <li>Mac OS
 	<div class="meter red">
+		<span style="width: 10%"></span>
+        <h6>10%</h6>
+	</div>
+	<div class="meter blue">
 		<span style="width: 10%"></span>
         <h6>10%</h6>
 	</div>
@@ -382,35 +336,60 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 <h4>Vaardigheden</h4>
 <h5>Programmeren</h5>
 <ul>
-<li>VBA
+	<li>VBA
 	<div class="meter red">
+		<span style="width: 90%"></span>
+        <h6>90%</h6>
+	</div>
+	<div class="meter blue">
 		<span style="width: 90%"></span>
         <h6>90%</h6>
 	</div>
     </li>
 <li>C#
 	<div class="meter red">
+		<span style="width: 60%"></span>
+        <h6>60%</h6>
+	</div>
+	<div class="meter blue">
 		<span style="width: 70%"></span>
         <h6>70%</h6>
-	</div></li>
+	</div>
+	</li>
 <li>Javascript
 	<div class="meter red">
+		<span style="width: 30%"></span>
+        <h6>30%</h6>
+	</div>
+		<div class="meter blue">
 		<span style="width: 40%"></span>
         <h6>40%</h6>
-	</div></li>
+	</div>
+	</li>
 <li>HTML
     <div class="meter red">
+		<span style="width: 40%"></span>
+        <h6>40%</h6>
+	</div>
+	<div class="meter blue">
 		<span style="width: 50%"></span>
         <h6>50%</h6>
-	</div></li>
+	</div>
+	</li>
 <li>CSS
     <div class="meter red">
+		<span style="width: 60%"></span>
+        <h6>60%</h6>
+	</div>
+	<div class="meter blue">
 		<span style="width: 70%"></span>
         <h6>70%</h6>
-	</div></li>
+	</div>
+	</li>
 </ul>
 </div>
-    </div>    
+
+ 
     <script>
         $(document).ready(function() {
 			$('#toonknop1').on('click', function() {
@@ -425,17 +404,7 @@ Als tweede versie moesten we een vergelijking maken tussen de kennis in het begi
 				}
 			});
 			
-			$('#toonknop2').on('click', function() {
-				$('#eindjaar').fadeToggle();
-				if($('#toonknop2 a').text() == 'Toon')
-				{
-					$('#toonknop2 a').text('Verberg');
-				}
-				else
-				{
-					$('#toonknop2 a').text('Toon');
-				}
-			});
+
 		});
     </script>
 </doctypehtml>
